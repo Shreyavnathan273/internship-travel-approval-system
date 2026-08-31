@@ -1,0 +1,116 @@
+<html>
+<head>
+    <title>Register</title>
+
+    <style>
+        body {
+            background-color: #f0f2f5;
+            font-family: Arial;
+        }
+
+        .container {
+            width: 300px;
+            margin: 100px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 0 10px gray;
+        }
+
+        input {
+            width: 90%;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px;
+            border: 1px solid gray;
+        }
+
+        button {
+            padding: 10px 15px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            background-color: green;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: darkgreen;
+        }
+        .form-group {
+            margin: 15px 0;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        select {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+            background-color: #fff;
+            cursor: pointer;
+        }
+
+        select:focus {
+            outline: none;
+            border-color: #007BFF;
+        }
+        .form-group {
+            margin: 15px 0;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        select {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+            background-color: #fff;
+            cursor: pointer;
+        }
+
+        select:focus {
+            outline: none;
+            border-color: #007BFF;
+        }
+</style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Register</h2>
+
+        <form action="register.php" method="post">
+            <input type="text" name="username" placeholder="Username" required><br>
+            <input type="password" name="password" placeholder="Password" required><br>
+            <input type="text" name="id" placeholder="Employee ID" required><br>
+            <label>Select Role:</label>
+            <select name="role" required>
+                <option value="user">User</option>
+                <option value="HR">HR</option>
+                <option value="Manager">Manager</option>
+                <option value="Finance">Finance</option>
+                <option value="Admin">Admin</option>
+            </select>
+            <button type="submit" name="submit">Register</button>
+        </form>
+    </div>
+
+</body>
+</html>
